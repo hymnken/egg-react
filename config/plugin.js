@@ -13,3 +13,9 @@ exports.validate = {
   enable: true,
   package:'egg-validate'
 }
+
+
+exports.validate = {
+  enable: true,
+  package:'egg-view-ejs'
+}
