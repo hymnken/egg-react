@@ -49,6 +49,16 @@ class UserController extends Controller {
       data: ctx.request.body,
     };
   }
+  async login() {
+    const { ctx } = this;
+    const body = ctx.request.body;
+    ctx.cookies.set("user", JSON.stringify(body));
+    
+    ctx.body = {
+      status: 200,
+      data:body
+    }
+  }
 }
 
 module.exports = UserController;
