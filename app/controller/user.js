@@ -1,4 +1,3 @@
-'use strict';
 
 const Controller = require('egg').Controller;
 
@@ -95,7 +94,6 @@ class UserController extends Controller {
     // console.log(ctx.query);
     const res = await ctx.service.user.detail(10);
     console.log(res);
-    ctx.body = ctx.query.id;
   }
 
   async detail2() {
