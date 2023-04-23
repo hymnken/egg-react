@@ -1,21 +1,11 @@
-// 'use strict';
-
-// /** @type Egg.EggPlugin */
-// module.exports = {
-//   // had enabled by egg
-//   // static: {
-//   //   enable: true,
-//   // }
-// };
-
+'use strict';
 
 exports.validate = {
   enable: true,
-  package:'egg-validate'
-}
+  package: 'egg-validate',
+};
 
-
-exports.validate = {
+exports.ejs = {
   enable: true,
-  package:'egg-view-ejs'
-}
+  package: 'egg-view-ejs'
+};
