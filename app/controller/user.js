@@ -10,7 +10,6 @@ class UserController extends Controller {
   }
   async index() {
     const { ctx } = this;
-    
     // 获取session
     const session = ctx.session.user;
     const zhSession = ctx.session.zh;
