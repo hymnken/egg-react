@@ -13,8 +13,7 @@ class UserController extends Controller {
     // 获取session
     const session = ctx.session.user;
     const zhSession = ctx.session.zh;
-    console.log(session)
-    console.log(zhSession)
+
 
     ctx.cookies.set("zh", "测试", {
       encrypt: true
