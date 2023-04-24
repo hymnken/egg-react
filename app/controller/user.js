@@ -25,7 +25,7 @@ class UserController extends Controller {
 
     ctx.cookies.set("base64", this.encode("中文base64"));
     const base64 = this.decode(ctx.cookies.get("base64"));
-
+    console.log(cookies)
     // ctx.body = 'user index';
     const user = ctx.cookies.get("user");
     await ctx.render('user.html', {
