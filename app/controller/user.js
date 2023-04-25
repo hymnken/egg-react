@@ -54,8 +54,8 @@ class UserController extends Controller {
 
     // 保存session
     ctx.session.user = body;
-    ctx.session.zh = "中文测试";
-    ctx.session.test = "test";
+    ctx.session.zh = "中文的测试";
+    ctx.session.test = "test111";
 
     ctx.body = {
       status: 200,
