@@ -1,5 +1,4 @@
 module.exports = app => {
-
   const store = {};
   app.sessionStore = {
     async get(key){
