@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const Controller = require('egg').Controller;
+const Controller = require("egg").Controller;
 
 class HomeController extends Controller {
   async index() {
@@ -10,20 +10,34 @@ class HomeController extends Controller {
     ctx.body = res;
   }
   async newApplication() {
-    const { ctx, app } = this
-    const packageInfo = app.package('scripts')
+    const { ctx, app } = this;
+    const packageInfo = app.package("scripts");
     // console.log(packageInfo);
-    const allPack = app.allPackage
+    const allPack = app.allPackage;
     console.log(allPack);
-    ctx.body = 'newApplication'
+    ctx.body = "newApplication";
   }
 
-  async newContext() { 
-    const { ctx } = this
-    const params = ctx.params('id')
+  async newContext() {
+    const { ctx } = this;
+    const params = ctx.params("id");
     // console.log(params)
-    console.log(params)
-    ctx.body = 'newContext'
+    console.log(params);
+    ctx.body = "newContext";
+  }
+
+  async newRequest() {
+    const { ctx } = this;
+    const token = ctx.request.token;
+    ctx.body = token;
+  }
+
+  async newResponse() {
+    const { ctx } = this;
+    ctx.response.token = '123abc456'
+    const base64Parse = ctx.helper.base64Encode("newResponse");
+    ctx.body = base64Parse;
   }
 }
+
 module.exports = HomeController;
