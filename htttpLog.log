@@ -21,3 +21,8 @@
 2023-04-27 22:00:55 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2023-04-27 22:00:55","endTime":"2023-04-27 22:00:55","timeLength":6}
 2023-04-27 22:00:57 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2023-04-27 22:00:57","endTime":"2023-04-27 22:00:57","timeLength":2}
 2023-04-27 22:02:51 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2023-04-27 22:02:51","endTime":"2023-04-27 22:02:51","timeLength":7}
+2023-04-27 22:17:28 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-27 22:17:28","endTime":"2023-04-27 22:17:28","timeLength":41}
+2023-04-27 22:17:31 [httpLog] {"method":"POST","url":"/login","data":{"name":"admin","pwd":"admin"},"startTime":"2023-04-27 22:17:31","endTime":"2023-04-27 22:17:31","timeLength":8}
+2023-04-27 22:17:31 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-27 22:17:31","endTime":"2023-04-27 22:17:31","timeLength":11}
+2023-04-27 22:17:34 [httpLog] {"method":"POST","url":"/logout","data":{},"startTime":"2023-04-27 22:17:34","endTime":"2023-04-27 22:17:34","timeLength":0}
+2023-04-27 22:17:34 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-27 22:17:34","endTime":"2023-04-27 22:17:34","timeLength":4}
