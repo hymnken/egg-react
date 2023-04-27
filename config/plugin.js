@@ -1,3 +1,4 @@
+'use strict';
 const path = require('path');
 
 exports.validate = {
@@ -12,5 +13,10 @@ exports.ejs = {
 
 exports.auth = {
   enable: true,
-  path:path.join(__dirname,'../lib/plugin/egg-auth')
-}
+  path: path.join(__dirname, '../lib/plugin/egg-auth')
+};
+
+exports.info = {
+  enable: true,
+  path: path.join(__dirname, '../lib/plugin/egg-info')
+};
