@@ -3,7 +3,7 @@ const Subscription = require('egg').Subscription
 class getInfo extends Subscription{
     static get schedule() {
         return {
-            interval: 3000,
+            interval: 30000,
             type:'worker'
         }
     }

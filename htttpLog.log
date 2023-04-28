@@ -26,3 +26,6 @@
 2023-04-27 22:17:31 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-27 22:17:31","endTime":"2023-04-27 22:17:31","timeLength":11}
 2023-04-27 22:17:34 [httpLog] {"method":"POST","url":"/logout","data":{},"startTime":"2023-04-27 22:17:34","endTime":"2023-04-27 22:17:34","timeLength":0}
 2023-04-27 22:17:34 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-27 22:17:34","endTime":"2023-04-27 22:17:34","timeLength":4}
+2023-04-28 22:53:28 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-28 22:53:28","endTime":"2023-04-28 22:53:28","timeLength":22}
+2023-04-28 23:00:20 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:00:19","endTime":"2023-04-28 23:00:20","timeLength":1519}
+2023-04-28 23:04:12 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:04:12","endTime":"2023-04-28 23:04:12","timeLength":16}

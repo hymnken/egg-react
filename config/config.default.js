@@ -53,6 +53,18 @@ module.exports = (appInfo) => {
   config.auth = {
     exclude: ["/home", "/user", "/login", "/logout"],
   };
+
+  config.mysql = {
+    app: true,
+    agent: false,
+    client: {
+      host: '127.0.0.1',
+      port: '3306',
+      user: 'admin',
+      password: '123456',
+      database:'egg'
+    }
+  }
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

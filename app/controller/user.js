@@ -73,15 +73,15 @@ class UserController extends Controller {
   }
 
   async lists() {
-    const { ctx } = this;
-
-    await new Promise(resolve => {
-      setTimeout(() => {
-        resolve();
-      }, 1500);
-    });
-
-    ctx.body = [{ id: 123 }];
+    const { ctx,app } = this;
+    // console.log(app.mysql)
+    // await new Promise(resolve => {
+    //   setTimeout(() => {
+    //     resolve();
+    //   }, 1500);
+    // });
+    const res = await ctx.service.user.lists()
+    ctx.body = res;
   }
 
   async detail() {
