@@ -32,3 +32,5 @@
 2023-04-28 23:08:33 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:08:33","endTime":"2023-04-28 23:08:33","timeLength":16}
 2023-04-28 23:08:45 [httpLog] {"method":"GET","url":"/user/detail2/1","data":{},"startTime":"2023-04-28 23:08:45","endTime":"2023-04-28 23:08:45","timeLength":7}
 2023-04-28 23:09:48 [httpLog] {"method":"GET","url":"/user/detail2/2","data":{},"startTime":"2023-04-28 23:09:48","endTime":"2023-04-28 23:09:48","timeLength":4}
+2023-04-28 23:13:42 [httpLog] {"method":"POST","url":"/user/add","data":{"name":"user3","pwd":"123"},"startTime":"2023-04-28 23:13:42","endTime":"2023-04-28 23:13:42","timeLength":11}
+2023-04-28 23:14:06 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:14:06","endTime":"2023-04-28 23:14:06","timeLength":5}
