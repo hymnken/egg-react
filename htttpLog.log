@@ -34,3 +34,8 @@
 2023-04-28 23:09:48 [httpLog] {"method":"GET","url":"/user/detail2/2","data":{},"startTime":"2023-04-28 23:09:48","endTime":"2023-04-28 23:09:48","timeLength":4}
 2023-04-28 23:13:42 [httpLog] {"method":"POST","url":"/user/add","data":{"name":"user3","pwd":"123"},"startTime":"2023-04-28 23:13:42","endTime":"2023-04-28 23:13:42","timeLength":11}
 2023-04-28 23:14:06 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:14:06","endTime":"2023-04-28 23:14:06","timeLength":5}
+2023-04-28 23:18:15 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2023-04-28 23:18:15","endTime":"2023-04-28 23:18:15","timeLength":5}
+2023-04-28 23:18:35 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2023-04-28 23:18:35","endTime":"2023-04-28 23:18:35","timeLength":2}
+2023-04-28 23:18:48 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2023-04-28 23:18:48","endTime":"2023-04-28 23:18:48","timeLength":2}
+2023-04-28 23:20:47 [httpLog] {"method":"PUT","url":"/user/edit","data":{"id":3,"name":"user3","pwd":"1231231111"},"startTime":"2023-04-28 23:20:47","endTime":"2023-04-28 23:20:47","timeLength":25}
+2023-04-28 23:20:55 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:20:55","endTime":"2023-04-28 23:20:55","timeLength":13}

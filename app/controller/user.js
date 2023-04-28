@@ -97,7 +97,7 @@ class UserController extends Controller {
     const res = await ctx.service.user.detail2(ctx.params.id);
     ctx.body = res;
   }
-
+  // 新增数据
   async add() {
     const { ctx } = this;
     // const rule = {
@@ -111,11 +111,14 @@ class UserController extends Controller {
       data: res,
     };
   }
-
+  // 修改数据
   async edit() {
     const { ctx } = this;
-
-    ctx.body = ctx.request.body;
+    const res = await ctx.service.user.edit(ctx.request.body);
+    ctx.body = {
+      status: 200,
+      data: res
+    };
   }
 
   async del() {
