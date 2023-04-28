@@ -120,11 +120,14 @@ class UserController extends Controller {
       data: res
     };
   }
-
+  // 删除数据
   async del() {
     const { ctx } = this;
-
-    ctx.body = ctx.request.body.id;
+    const res = await ctx.service.user.edit(ctx.request.body.id);
+    ctx.body = {
+      status: 200,
+      data: res,
+    };
   }
 }
 

@@ -48,7 +48,17 @@ class UserService extends Service {
       return null;
     }
   }
-
+  // 删除数据
+  async edit(id) {
+    try {
+      const { app } = this;
+      const res = await app.mysql.delete("user", {id});
+      return res;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  }
   async detail(id) {
     return {
       id,

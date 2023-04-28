@@ -39,3 +39,5 @@
 2023-04-28 23:18:48 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2023-04-28 23:18:48","endTime":"2023-04-28 23:18:48","timeLength":2}
 2023-04-28 23:20:47 [httpLog] {"method":"PUT","url":"/user/edit","data":{"id":3,"name":"user3","pwd":"1231231111"},"startTime":"2023-04-28 23:20:47","endTime":"2023-04-28 23:20:47","timeLength":25}
 2023-04-28 23:20:55 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:20:55","endTime":"2023-04-28 23:20:55","timeLength":13}
+2023-04-28 23:25:08 [httpLog] {"method":"DELETE","url":"/user/del","data":{"id":2},"startTime":"2023-04-28 23:25:08","endTime":"2023-04-28 23:25:08","timeLength":8}
+2023-04-28 23:25:56 [httpLog] {"method":"DELETE","url":"/user/del","data":{"id":2},"startTime":"2023-04-28 23:25:56","endTime":"2023-04-28 23:25:56","timeLength":10}
