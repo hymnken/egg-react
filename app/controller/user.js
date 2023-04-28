@@ -1,11 +1,10 @@
-
-const Controller = require('egg').Controller;
+const Controller = require("egg").Controller;
 
 class UserController extends Controller {
-  encode(str = ''){
+  encode(str = "") {
     return new Buffer(str).toString("base64");
   }
-  decode(str = ''){
+  decode(str = "") {
     return new Buffer(str, "base64").toString();
   }
   async index() {
@@ -14,10 +13,10 @@ class UserController extends Controller {
     const session = ctx.session.user;
     const zhSession = ctx.session.zh;
     ctx.cookies.set("zh", "测试", {
-      encrypt: true
+      encrypt: true,
     });
     const zh = ctx.cookies.get("zh", {
-      encrypt: true
+      encrypt: true,
     });
     // console.log(zh)
 
@@ -25,23 +24,23 @@ class UserController extends Controller {
     const base64 = this.decode(ctx.cookies.get("base64"));
     // ctx.body = 'user index';
     const user = ctx.cookies.get("user");
-    await ctx.render('user.html', {
-      id: 100,
-      name: 'admin',
-      lists: [
-        'java',
-        "php",
-        "ts"
-      ],
-      user: user ? JSON.parse(user) : null,
-      zh,
-      base64
-    }, {
-      delimiter: '%'
-    });
+    await ctx.render(
+      "user.html",
+      {
+        id: 100,
+        name: "admin",
+        lists: ["java", "php", "ts"],
+        user: user ? JSON.parse(user) : null,
+        zh,
+        base64,
+      },
+      {
+        delimiter: "%",
+      }
+    );
   }
 
-  async login(){
+  async login() {
     const { ctx } = this;
     const body = ctx.request.body;
     ctx.cookies.set("user", JSON.stringify(body), {
@@ -56,11 +55,11 @@ class UserController extends Controller {
 
     ctx.body = {
       status: 200,
-      data: body
+      data: body,
     };
   }
 
-  async logout(){
+  async logout() {
     const { ctx } = this;
     ctx.cookies.set("user", null);
 
@@ -68,19 +67,19 @@ class UserController extends Controller {
     ctx.session.user = null;
 
     ctx.body = {
-      status: 200
+      status: 200,
     };
   }
 
   async lists() {
-    const { ctx,app } = this;
+    const { ctx, app } = this;
     // console.log(app.mysql)
     // await new Promise(resolve => {
     //   setTimeout(() => {
     //     resolve();
     //   }, 1500);
     // });
-    const res = await ctx.service.user.lists()
+    const res = await ctx.service.user.lists();
     ctx.body = res;
   }
 
@@ -94,21 +93,22 @@ class UserController extends Controller {
   async detail2() {
     const { ctx } = this;
     console.log(ctx.params);
-    ctx.body = ctx.params.id;
+    // ctx.body = ctx.params.id;
+    const res = await ctx.service.user.detail2(ctx.params.id);
+    ctx.body = res;
   }
 
   async add() {
     const { ctx } = this;
-    console.log(ctx.request.body);
-
-    const rule = {
-      name: { type: 'string' },
-      age: { type: 'number' },
-    };
-    ctx.validate(rule);
+    // const rule = {
+    //   name: { type: "string" },
+    //   age: { type: "number" },
+    // };
+    // ctx.validate(rule);
+    const res = await ctx.service.user.add(ctx.request.body)
     ctx.body = {
       status: 200,
-      data: ctx.request.body,
+      data: res,
     };
   }
 

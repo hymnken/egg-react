@@ -7,13 +7,37 @@ class UserService extends Service {
   async lists() {
     try {
       const { app } = this;
-      const res = await app.mysql.select('user');
-      return res
+      const res = await app.mysql.select("user");
+      return res;
     } catch (error) {
-      console.log(error)
-      return null
+      console.log(error);
+      return null;
     }
   }
+
+  // 查询单条
+  async detail2(id) {
+    try {
+      const { app } = this;
+      const res = await app.mysql.get("user", { id });
+      return res;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  }
+  // 新增数据
+  async add(params) {
+    try {
+      const { app } = this;
+      const res = await app.mysql.insert("user",params);
+      return res;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  }
+
 
   async detail(id) {
     return {
