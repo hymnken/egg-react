@@ -41,3 +41,7 @@
 2023-04-28 23:20:55 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-28 23:20:55","endTime":"2023-04-28 23:20:55","timeLength":13}
 2023-04-28 23:25:08 [httpLog] {"method":"DELETE","url":"/user/del","data":{"id":2},"startTime":"2023-04-28 23:25:08","endTime":"2023-04-28 23:25:08","timeLength":8}
 2023-04-28 23:25:56 [httpLog] {"method":"DELETE","url":"/user/del","data":{"id":2},"startTime":"2023-04-28 23:25:56","endTime":"2023-04-28 23:25:56","timeLength":10}
+2023-04-29 00:29:16 [httpLog] {"method":"GET","url":"/user/detail?id=123","data":{},"startTime":"2023-04-29 00:29:16","endTime":"2023-04-29 00:29:16","timeLength":23}
+2023-04-29 00:29:22 [httpLog] {"method":"GET","url":"/","data":{},"startTime":"2023-04-29 00:29:22","endTime":"2023-04-29 00:29:22","timeLength":3}
+2023-04-29 00:29:28 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-29 00:29:28","endTime":"2023-04-29 00:29:28","timeLength":26}
+2023-04-29 00:29:31 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-29 00:29:31","endTime":"2023-04-29 00:29:31","timeLength":9}

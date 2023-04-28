@@ -26,7 +26,7 @@ exports.mysql = {
   path: 'egg-mysql',
 };
 
-exports.mysql = {
+exports.sequelize = {
   enable: true,
-  path: "egg-sequelize",
+  package: "egg-sequelize",
 };
