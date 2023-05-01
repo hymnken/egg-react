@@ -45,3 +45,9 @@
 2023-04-29 00:29:22 [httpLog] {"method":"GET","url":"/","data":{},"startTime":"2023-04-29 00:29:22","endTime":"2023-04-29 00:29:22","timeLength":3}
 2023-04-29 00:29:28 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2023-04-29 00:29:28","endTime":"2023-04-29 00:29:28","timeLength":26}
 2023-04-29 00:29:31 [httpLog] {"method":"GET","url":"/user/lists","data":{},"startTime":"2023-04-29 00:29:31","endTime":"2023-04-29 00:29:31","timeLength":9}
+2023-05-01 22:38:04 [httpLog] {"method":"DELETE","url":"/api/user/register","data":{"username":"test1","password":1234},"startTime":"2023-05-01 22:38:04","endTime":"2023-05-01 22:38:04","timeLength":1}
+2023-05-01 22:38:26 [httpLog] {"method":"DELETE","url":"/api/user/register","data":{"username":"test1","password":"abc"},"startTime":"2023-05-01 22:38:26","endTime":"2023-05-01 22:38:26","timeLength":1}
+2023-05-01 22:39:30 [httpLog] {"method":"DELETE","url":"/api/user/register","data":{"username":"test1","password":"abc"},"startTime":"2023-05-01 22:39:30","endTime":"2023-05-01 22:39:30","timeLength":2}
+2023-05-01 22:40:00 [httpLog] {"method":"DELETE","url":"/api/user/register","data":{"username":"test1","password":"abc"},"startTime":"2023-05-01 22:40:00","endTime":"2023-05-01 22:40:00","timeLength":1}
+2023-05-01 22:40:02 [httpLog] {"method":"DELETE","url":"/api/user/register","data":{"username":"test1","password":"abc"},"startTime":"2023-05-01 22:40:02","endTime":"2023-05-01 22:40:02","timeLength":0}
+2023-05-01 22:44:24 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"test1","password":"abc"},"startTime":"2023-05-01 22:44:24","endTime":"2023-05-01 22:44:24","timeLength":73}

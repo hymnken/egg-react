@@ -1,5 +1,6 @@
+const dayjs = require("dayjs");
 module.exports = {
-    base64Encode(str = '') {
-        return new Buffer(str).toString('base64');
-    }
+  base64Encode(str = "") {
+    return new Buffer(str).toString("base64");
+  },
 };
