@@ -2,7 +2,7 @@ module.exports = (app) => {
   const { STRING, INTEGER,TEXT,DATE } = app.Sequelize;
   const User = app.model.define("user", {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-    name: STRING(20),
+    username: STRING(20),
     password: STRING(64),
     avatar: TEXT('long'),
     phone: STRING(20),

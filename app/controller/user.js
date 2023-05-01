@@ -18,12 +18,15 @@ class UserController extends Controller {
       ...params,
       // 隐式加密 只有开发人员才知道后面加了个hymnken
       password: md5(params.password + app.config.salt),
-      createTime: dayjs().format("YYYY-MM-DD HH:mm:ss"),
+      createTime: ctx.helper.time()
     });
     if (result) {
       ctx.body = {
         status: 200,
-        data: result,
+        data: {
+          ...ctx.helper.unPick(result.dataValues, ['password']),
+          createTime:ctx.helper.timeStamp(result.createTime)
+        }
       };
     } else {
       ctx.body = {
