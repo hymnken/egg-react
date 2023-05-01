@@ -56,3 +56,16 @@
 2023-05-01 22:55:28 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"test4","password":"abcd"},"startTime":"2023-05-01 22:55:28","endTime":"2023-05-01 22:55:28","timeLength":44}
 2023-05-01 23:04:53 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test4","password":"abcd"},"startTime":"2023-05-01 23:04:53","endTime":"2023-05-01 23:04:53","timeLength":20}
 2023-05-01 23:05:00 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test41","password":"abcd"},"startTime":"2023-05-01 23:05:00","endTime":"2023-05-01 23:05:00","timeLength":8}
+2023-05-01 23:32:18 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test1","password":"abcd"},"startTime":"2023-05-01 23:32:18","endTime":"2023-05-01 23:32:18","timeLength":17}
+2023-05-01 23:32:27 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test1","password":"abc"},"startTime":"2023-05-01 23:32:27","endTime":"2023-05-01 23:32:27","timeLength":14}
+2023-05-01 23:33:01 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test91","password":"abc"},"startTime":"2023-05-01 23:33:01","endTime":"2023-05-01 23:33:01","timeLength":20}
+2023-05-01 23:33:06 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test1","password":"abc"},"startTime":"2023-05-01 23:33:06","endTime":"2023-05-01 23:33:06","timeLength":11}
+2023-05-01 23:36:21 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"admin","password":"abc"},"startTime":"2023-05-01 23:36:21","endTime":"2023-05-01 23:36:21","timeLength":36}
+2023-05-01 23:36:29 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"abc"},"startTime":"2023-05-01 23:36:29","endTime":"2023-05-01 23:36:29","timeLength":8}
+2023-05-01 23:41:28 [httpLog] {"method":"POST","url":"/api/commons/citys","data":{},"startTime":"2023-05-01 23:41:28","endTime":"2023-05-01 23:41:28","timeLength":0}
+2023-05-01 23:41:28 [httpLog] {"method":"POST","url":"/api/house/hot","data":{},"startTime":"2023-05-01 23:41:28","endTime":"2023-05-01 23:41:28","timeLength":0}
+2023-05-01 23:41:59 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"123"},"startTime":"2023-05-01 23:41:59","endTime":"2023-05-01 23:41:59","timeLength":10}
+2023-05-01 23:42:04 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"1234"},"startTime":"2023-05-01 23:42:04","endTime":"2023-05-01 23:42:04","timeLength":5}
+2023-05-01 23:42:11 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"abc"},"startTime":"2023-05-01 23:42:11","endTime":"2023-05-01 23:42:11","timeLength":6}
+2023-05-01 23:42:47 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"abc"},"startTime":"2023-05-01 23:42:47","endTime":"2023-05-01 23:42:47","timeLength":11}
+2023-05-01 23:44:41 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"admin2","password":"abc","password2":"abc"},"startTime":"2023-05-01 23:44:41","endTime":"2023-05-01 23:44:41","timeLength":17}

@@ -78,6 +78,11 @@ module.exports = (appInfo) => {
       freezeTableName: true,
     },
   };
+
+  config.jwt = {
+    // 密钥
+    secret:'hymnken'
+  }
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

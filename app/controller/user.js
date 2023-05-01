@@ -2,6 +2,18 @@ const Controller = require("egg").Controller;
 const md5 = require("md5");
 const dayjs = require("dayjs");
 class UserController extends Controller {
+  async jwtSign() {
+    const { ctx, app } = this
+    const username = ctx.request.body.username
+    const token = app.jwt.sign(
+      {
+        username,
+      },
+      app.config.jwt.secret
+    );
+    ctx.session[username] = 1;
+    return token;
+  }
   // 注册接口
   async register() {
     const { ctx, app } = this;
@@ -21,11 +33,13 @@ class UserController extends Controller {
       createTime: ctx.helper.time(),
     });
     if (result) {
+      const token =await this.jwtSign()
       ctx.body = {
         status: 200,
         data: {
           ...ctx.helper.unPick(result.dataValues, ["password"]),
           createTime: ctx.helper.timeStamp(result.createTime),
+          token,
         },
       };
     } else {
@@ -35,25 +49,25 @@ class UserController extends Controller {
       };
     }
   }
-
   // 登录接口
   async login() {
-    const { ctx } = this;
+    const { ctx, app } = this;
     const { username, password } = ctx.request.body;
     const user = await ctx.service.user.getUser(username, password);
     if (user) {
-      ctx.session.userId = user.id;
+      const token = await this.jwtSign();
       ctx.body = {
         status: 200,
         data: {
           ...ctx.helper.unPick(user.dataValues, ["password"]),
           createTime: ctx.helper.timeStamp(user.createTime),
+          token,
         },
       };
     } else {
       ctx.body = {
         status: 500,
-        errMsg: "该用户不存在",
+        errMsg: "该用户不存在或者密码错误,请仔细检查",
       };
     }
   }
