@@ -54,3 +54,5 @@
 2023-05-01 22:52:39 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"test2","password":"abc"},"startTime":"2023-05-01 22:52:39","endTime":"2023-05-01 22:52:39","timeLength":64}
 2023-05-01 22:54:37 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"test3","password":"abcd"},"startTime":"2023-05-01 22:54:37","endTime":"2023-05-01 22:54:37","timeLength":41}
 2023-05-01 22:55:28 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"test4","password":"abcd"},"startTime":"2023-05-01 22:55:28","endTime":"2023-05-01 22:55:28","timeLength":44}
+2023-05-01 23:04:53 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test4","password":"abcd"},"startTime":"2023-05-01 23:04:53","endTime":"2023-05-01 23:04:53","timeLength":20}
+2023-05-01 23:05:00 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"test41","password":"abcd"},"startTime":"2023-05-01 23:05:00","endTime":"2023-05-01 23:05:00","timeLength":8}
