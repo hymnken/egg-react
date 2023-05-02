@@ -51,7 +51,7 @@ module.exports = (appInfo) => {
     renew: true,
   };
   config.auth = {
-    exclude: ["/home", "/user", "/login", "/logout"],
+    exclude: ['/api/user/login', '/api/user/register']
   };
 
   // config.mysql = {
