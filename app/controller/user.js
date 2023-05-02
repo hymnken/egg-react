@@ -3,8 +3,8 @@ const md5 = require("md5");
 const dayjs = require("dayjs");
 class UserController extends Controller {
   async jwtSign() {
-    const { ctx, app } = this
-    const username = ctx.request.body.username
+    const { ctx, app } = this;
+    const username = ctx.request.body.username;
     const token = app.jwt.sign(
       {
         username,
@@ -33,7 +33,7 @@ class UserController extends Controller {
       createTime: ctx.helper.time(),
     });
     if (result) {
-      const token =await this.jwtSign()
+      const token = await this.jwtSign();
       ctx.body = {
         status: 200,
         data: {
@@ -68,6 +68,40 @@ class UserController extends Controller {
       ctx.body = {
         status: 500,
         errMsg: "该用户不存在或者密码错误,请仔细检查",
+      };
+    }
+  }
+  // 用户详情接口
+  async detail() {
+    const { ctx } = this;
+    const user = await ctx.service.user.getUser(ctx.username);
+    if (user) {
+      ctx.body = {
+        status: 200,
+        data: {
+          ...ctx.helper.unPick(user.dataValues, ["password"]),
+          createTime: ctx.helper.timeStamp(user.createTime),
+        },
+      };
+    } else {
+      ctx.body = {
+        status: 500,
+        errMsg: "该用户不存在",
+      };
+    }
+  }
+  async logout() {
+    const { ctx } = this;
+    try {
+      ctx.session[ctx.username] = null;
+      ctx.body = {
+        status: 200,
+        data: "ok",
+      };
+    } catch (error) {
+      ctx.body = {
+        status: 500,
+        errMsg: "退出登录失败",
       };
     }
   }
