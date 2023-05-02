@@ -51,20 +51,8 @@ module.exports = (appInfo) => {
     renew: true,
   };
   config.auth = {
-    exclude: ['/api/user/login', '/api/user/register']
+    exclude: ["/api/user/login", "/api/user/register"],
   };
-
-  // config.mysql = {
-  //   app: true,
-  //   agent: false,
-  //   client: {
-  //     host: "127.0.0.1",
-  //     port: "3306",
-  //     user: "root",
-  //     password: "123456",
-  //     database: "egg",
-  //   },
-  // };
 
   config.sequelize = {
     dialect: "mysql",
@@ -78,15 +66,23 @@ module.exports = (appInfo) => {
       freezeTableName: true,
     },
   };
-
+  config.redis = {
+    client: {
+      port: 6379,
+      host: "127.0.0.1",
+      password: "123456",
+      db: 0,
+    },
+  };
   config.jwt = {
     // 密钥
-    secret:'hymnken'
-  }
+    secret: "hymnken",
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
-    salt:'hymnken'
+    salt: "hymnken",
+    redisExpire: 60 * 60 * 24,
   };
 
   return {

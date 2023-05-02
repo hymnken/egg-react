@@ -11,7 +11,8 @@ class UserController extends Controller {
       },
       app.config.jwt.secret
     );
-    ctx.session[username] = 1;
+    // ctx.session[username] = 1;
+    await app.redis.set(username, 1, 'EX', app.config.redisExpire);
     return token;
   }
   // 注册接口

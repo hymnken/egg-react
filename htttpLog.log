@@ -122,3 +122,7 @@
 2023-05-02 21:49:30 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"abc"},"startTime":"2023-05-02 21:49:30","endTime":"2023-05-02 21:49:30","timeLength":14}
 2023-05-02 21:49:30 [httpLog] {"method":"POST","url":"/api/user/detail","data":{"id":10},"startTime":"2023-05-02 21:49:30","endTime":"2023-05-02 21:49:30","timeLength":8}
 2023-05-02 21:49:35 [httpLog] {"method":"POST","url":"/api/user/logout","data":{},"startTime":"2023-05-02 21:49:35","endTime":"2023-05-02 21:49:35","timeLength":1}
+2023-05-02 22:32:01 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"abc"},"startTime":"2023-05-02 22:32:01","endTime":"2023-05-02 22:32:01","timeLength":27}
+2023-05-02 22:32:01 [httpLog] {"method":"POST","url":"/api/user/detail","data":{"id":10},"startTime":"2023-05-02 22:32:01","endTime":"2023-05-02 22:32:01","timeLength":16}
+2023-05-02 22:43:31 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"admin","password":"abc"},"startTime":"2023-05-02 22:43:31","endTime":"2023-05-02 22:43:31","timeLength":23}
+2023-05-02 22:43:31 [httpLog] {"method":"POST","url":"/api/user/detail","data":{"id":10},"startTime":"2023-05-02 22:43:31","endTime":"2023-05-02 22:43:31","timeLength":20}
