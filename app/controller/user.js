@@ -84,6 +84,14 @@ class UserController extends BaseController {
       this.error("登出失败");
     }
   }
+  async edit() {
+    const { ctx } = this;
+    const result = ctx.service.user.editUser({
+      ...ctx.params(),
+      updateTime:ctx.helper.time()
+    })
+    this.success(result)
+  }
 }
 
 module.exports = UserController;
